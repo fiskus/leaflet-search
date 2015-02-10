@@ -722,10 +722,10 @@ L.Control.Search = L.Control.extend({
 		this.hideAlert();
 		this._hideTooltip();
 
-		if(this._input.style.display == 'none')	//on first click show _input only
-			this.expand();
-		else
-		{
+		//if(this._input.style.display == 'none')	//on first click show _input only
+		//	this.expand();
+		//else
+		//{
 			if(this._input.value === '')	//hide _input only
 				this.collapse();
 			else
@@ -746,7 +746,7 @@ L.Control.Search = L.Control.extend({
 				//this.collapse();
 				//FIXME if collapse in _handleSubmit hide _markerLoc!
 			}
-		}
+		//}
 	},
 
 	_getLocation: function(key) {	//extract latlng from _recordsCache
